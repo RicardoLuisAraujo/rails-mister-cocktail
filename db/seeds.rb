@@ -38,5 +38,5 @@ puts "Creating cocktails"
   cocktail = Cocktail.create(
     name: Faker::JapaneseMedia::DragonBall.character
     )
-  puts cocktail
+  puts cocktail.name
 end
