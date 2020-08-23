@@ -8,11 +8,10 @@
 require 'open-uri'
 
 puts "Destroy ingredients"
-Ingredient.destroy_all if Rails.env.development?
+Ingredient.destroy_all
 
 puts "Destroy Cocktails"
 Cocktail.destroy_all
-
 
 Ingredient.create(name: "lemon")
 Ingredient.create(name: "ice")
@@ -22,9 +21,9 @@ Ingredient.create(name: "mint leaves")
 # straw.save
 # olive = Cocktail.new(name: "Olive Cocktail")
 # olive.save
-lemonade = Cocktail.new(name: "Lemonade Cocktail")
-lemonade.save
-puts lemonade
+# lemonade = Cocktail.new(name: "Lemonade Cocktail")
+# lemonade.save
+# puts lemonade
 
 puts "Create ingredients"
 url = "https://www.thecocktaildb.com/api/json/v1/1/list.php?i=list"
